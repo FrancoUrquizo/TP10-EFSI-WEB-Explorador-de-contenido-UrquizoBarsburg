@@ -1,0 +1,10 @@
+.detail {
+  margin: 0;
+  font-size: 0.925rem;
+  color: var(--text-muted);
+}
+
+.detail span {
+  font-weight: 600;
+  color: var(--text);
+}

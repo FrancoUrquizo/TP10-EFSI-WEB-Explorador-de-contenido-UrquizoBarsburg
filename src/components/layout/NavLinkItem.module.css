@@ -1,0 +1,49 @@
+.navLink {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.925rem;
+  transition: all 0.25s ease;
+}
+
+.navLink:hover {
+  background: rgba(100, 116, 139, 0.1);
+  color: var(--text);
+}
+
+.navLinkActive {
+  background: linear-gradient(135deg, var(--accent), var(--accent-violet));
+  color: #ffffff;
+  box-shadow: 0 8px 16px -6px rgba(99, 102, 241, 0.5);
+}
+
+.navLinkActive:hover {
+  background: linear-gradient(135deg, var(--accent), var(--accent-violet));
+  color: #ffffff;
+}
+
+.navLinkBadge {
+  display: inline-block;
+  min-width: 20px;
+  padding: 1px 7px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-violet));
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(99, 102, 241, 0.4);
+}
+
+@media (max-width: 640px) {
+  .navLink {
+    flex: 1;
+    justify-content: center;
+  }
+}

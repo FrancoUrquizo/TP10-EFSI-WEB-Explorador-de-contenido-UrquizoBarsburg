@@ -1,0 +1,18 @@
+.pageHeader {
+  margin-bottom: 0.25rem;
+}
+
+.pageTitle {
+  margin: 0;
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.pageSubtitle {
+  margin: 6px 0 0;
+  color: var(--text-muted);
+  font-size: 1rem;
+}

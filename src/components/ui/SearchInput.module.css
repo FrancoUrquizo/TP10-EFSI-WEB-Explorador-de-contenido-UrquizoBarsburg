@@ -1,0 +1,27 @@
+.searchBarInput {
+  width: 100%;
+  padding: 14px 18px 14px 48px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+}
+
+.searchBarInput::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.searchBarInput:hover {
+  border-color: var(--border-strong);
+}
+
+.searchBarInput:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-ring);
+}

@@ -1,0 +1,8 @@
+.flag {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  background: #eef2f7;
+  border-bottom: 1px solid var(--border);
+}
