@@ -1,0 +1,67 @@
+.back {
+  align-self: flex-start;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back:hover {
+  color: var(--accent-hover);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.flag {
+  width: 100%;
+  max-height: 320px;
+  border-bottom: 1px solid var(--border);
+}
+
+.body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.title {
+  margin: 0;
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .flag {
+    width: 45%;
+    max-height: none;
+    border-bottom: none;
+    border-right: 1px solid var(--border);
+  }
+
+  .body {
+    flex: 1;
+    justify-content: center;
+  }
+}

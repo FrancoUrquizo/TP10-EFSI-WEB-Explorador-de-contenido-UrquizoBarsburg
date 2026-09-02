@@ -19,6 +19,9 @@ export const mapCountry = (raw) => {
     capital: raw?.capitals?.map?.(({ name }) => name) ?? [],
     capitalName: safeCapital(raw?.capitals),
     region: raw?.region ?? "—",
+    population: raw?.population ?? 0,
+    languages: raw?.languages?.map?.(({ name }) => name) ?? [],
+    currencies: raw?.currencies?.map?.(({ name }) => name) ?? [],
   };
 };
 

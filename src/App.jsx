@@ -3,6 +3,7 @@ import Header from "./components/layout/Header";
 import useFavorites from "./hooks/useFavorites";
 import Home from "./pages/Home";
 import FavoritesPage from "./pages/FavoritesPage";
+import CountryPage from "./pages/CountryPage";
 import styles from "./App.module.css";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <main className={styles.appMain}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/pais/:cca3" element={<CountryPage />} />
             <Route path="/favoritos" element={<FavoritesPage />} />
           </Routes>
         </main>

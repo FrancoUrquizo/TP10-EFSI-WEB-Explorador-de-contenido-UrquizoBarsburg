@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllCountries } from "../services/api";
+import { getAllCountriesPaginated } from "../services/api";
 import { mapCountries } from "../services/countryMapper";
 
 const useCountries = () => {
@@ -11,8 +11,8 @@ const useCountries = () => {
   useEffect(() => {
     const fetchCountries = async () => {
       try {
-        const { data } = await getAllCountries({ limit: 100 });
-        setCountries(mapCountries(data?.data?.objects));
+        const objects = await getAllCountriesPaginated();
+        setCountries(mapCountries(objects));
       } catch {
         setError(true);
       } finally {
